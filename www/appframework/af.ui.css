@@ -166,7 +166,12 @@ body {
 } /* This class is applied to the divs that contain the various "views" or pages of the app. */
 
 
-
+#afui .play a {
+	padding: 2px;
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 
 /**********************************************************
