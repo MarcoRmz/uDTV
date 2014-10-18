@@ -2064,14 +2064,14 @@ color:inherit;
 }
 
 #afui.ios7 #header {
-    background:rgb(249,249,249);
+    background: #0347B6;
     color:inherit;
     border:none;
     border-bottom:1px solid rgba(158,158,158,255);
 }
 
 #afui.ios7 #header .button {
-    color:rgba(82,155,234,255);
+    color: #fff;
     border-color:transparent;
     font-size:14px;
     font-weight:normal;
@@ -2083,14 +2083,14 @@ color:inherit;
 }
 
 #afui.ios7 .panel {
-    background:rgba(238,238,238,255);    
+    background: #fff;    
 }
 #afui.ios7 .panel h2 { color:inherit;}
 
 #afui.ios7 #navbar {
     background: #0347B6;
     color:black;
-    border-top:1px solid rgba(158,158,158,255);
+    border-top:1px solid #0347B6;
     box-shadow:none;
 }
 
@@ -2113,8 +2113,8 @@ color:inherit;
 
 #afui.ios7 > #menu {
     border-right:1px solid #bbb;
-    background:rgba(238,238,238,255);
-    color:black;
+    background: #005EAD; /* List Background Color */
+    color: white;
 }
 
 #afui.ios7 #menu .list li,#afui.ios7 #menu .list .divider,#afui.ios7 #menu .list li:first-child,#afui.ios7 #menu .list li:last-child {
@@ -2124,7 +2124,7 @@ color:inherit;
 }
 
 #afui.ios7 #menu .list .divider {
-    background:rgba(238,238,238,255);
+    background: #005EAD;
     color:inherit;
     font-size: 1em;
     border-bottom:1px solid rgb(215,215,215);
@@ -2132,11 +2132,11 @@ color:inherit;
 }
 
 #afui.ios7 #menu .list a {
-    color:black;
+    color:white; /* Links Color Menu List*/
 }
 
 #afui.ios7 #menu .list {
-    background:white;
+    background: #005EAD; /* Background Color Menu List*/
     font-weight: normal;
     color:black;
 }
@@ -2503,7 +2503,7 @@ color:inherit;
     padding:7px !important;
     color:#fff;
     text-shadow:0 -1px 0 #333;
-    background-color:#476999;
+    background-color:#005EAD;
     background-image: none !important;
     border:1px solid;
     border-color:#375073 #375073 #375073 transparent;
