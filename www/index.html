@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Left Side Menu App template</title>
+    <title>uDTV Menu</title>
 <!--
     This template can be used for simple app with left side menu that can be opened to switch views, for applications like Youtube App or Gmail app.
 -->  
@@ -36,7 +36,7 @@
         $.ui.animateHeaders = false;
                 
         $(document).ready(function(){
-            $.ui.setSideMenuWidth('260px');
+            $.ui.setSideMenuWidth('200px');
             $.ui.launch();
         });
     </script>
@@ -47,44 +47,44 @@
     <!--Left Side Menu Navigation bar -->
     <nav>
         <ul class="list">
-            <li><a href="#page1" class="icon home">Home</a></li>
-            <li><a href="#page2" class="icon heart">Favorites</a></li>
-            <li><a href="#page3" class="icon chat">Messages</a></li>
-            <li><a href="#page4" class="icon user">Profile</a></li>
+            <li><a href="#page1" class="icon home">Remote</a></li>
+            <li><a href="#page2" class="icon heart">Music</a></li>
+            <li><a href="#page3" class="icon chat">Queue</a></li>
+            <li><a href="#page4" class="icon user">Facts</a></li>
         </ul>
     </nav>
     
     <div id="content" style=""> 
         
     <!--Main View Pages-->
-        <div class="panel" title="Home" id="page1" data-footer="none" selected="true">
+        <div class="panel" title="Remote" id="page1" data-footer="none" selected="true">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Home</h1>
+                <h1>Remote</h1>
             </header>
             <p>This is view for first menu item</p>
         </div>
         
-        <div class="panel" title="Favorites" id="page2" data-footer="none">
+        <div class="panel" title="Music" id="page2" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Favorites</h1>
+                <h1>Music</h1>
             </header>
             <p>This is view for second menu item</p>
         </div>
         
-        <div class="panel" title="Messages" id="page3" data-footer="none">
+        <div class="panel" title="Queue" id="page3" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Messages</h1>
+                <h1>Queue</h1>
             </header>
             <p>This is view for third menu item</p>
         </div>
         
-        <div class="panel" title="Profile" id="page4" data-footer="none">
+        <div class="panel" title="Facts" id="page4" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Profile</h1>
+                <h1>Facts</h1>
             </header>
             <p>This is view for fourth menu item</p>
         </div>
