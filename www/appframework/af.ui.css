@@ -1760,9 +1760,9 @@ color:inherit;
 
  */
 
-#afui.android {
+#afui.android { /* todo (index)*/
 	font:14px  'Roboto',sans-serif;
- 	background:#000;
+ 	background:#000; 
  	color:#fff;
     border-color:#fff;
 }
@@ -1800,7 +1800,7 @@ color:inherit;
 
 #afui.android > #navbar {
     box-shadow: none;
- 	background:inherit;
+ 	background:#0347B6;
  	border-top:2px solid #0347B6;
     border-bottom:none;
     padding:0;
