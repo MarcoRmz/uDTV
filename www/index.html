@@ -44,6 +44,15 @@
     </script>
 
     <script>
+        function play_music(){
+            document.getElementsByTagName('prueba').play();},
+            {
+            document.getElementsByTagName('prueba').pause();
+            }
+        });
+    </script>
+
+    <script>
     function power_click() {
         alert("alert");
         var powerXML = new XMLHttpRequest();
@@ -221,14 +230,5 @@
         
     </div>
 </div>
-<script>
-    $(".musica").toggle(function(){
-        document.getElementsByTagName('prueba').play();},
-        {
-        document.getElementsByTagName('prueba').pause();
-        }
-    });
-</script>
-
 </body>
 </html>    
