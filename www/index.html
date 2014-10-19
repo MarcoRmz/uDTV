@@ -53,9 +53,73 @@
     </script>
 
     <script>
+    function menu_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=menu&hold=keyPress", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
+    function up_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=up&hold=keyPress", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
+    function left_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=left&hold=keyPress", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
+    function select_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=select&hold=keyPress", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
+    function right_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=right&hold=keyPress", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
+    function down_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=down&hold=keyPress", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
+    function rewind_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=rew&hold=keyDown", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
     function play_click() {
         var powerXML = new XMLHttpRequest();
         powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=play&hold=keyPress", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
+    function fastforward_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=ffw&hold=keyDown", true);
         powerXML.send();
     }
     </script>
