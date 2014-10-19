@@ -165,15 +165,54 @@ body {
 	padding-top:0px;
 } /* This class is applied to the divs that contain the various "views" or pages of the app. */
 
-
-#afui .play a {
+#afui .panel a{
+	font-size: 30px;
 	padding: 2px;
 	color: black;
-	position: absolute;
+	text-decoration: none;
+	position: relative;
+}
+
+#afui .power a {
+	
+}
+
+#afui .menu a {
+	
+}
+
+#afui .up a {
+	right: 50%;
+
+}
+
+#afui .left a {
+	left: 40%;
+}
+
+#afui .select a {
 	right: 50%;
 }
 
-#afui .
+#afui .right a {
+	right: 40%;
+}
+
+#afui .down a {
+	right: 50%;
+}
+
+#afui .fastbackward a {
+	display: inline;
+}
+
+#afui .play a {
+	display: inline;
+}
+
+#afui .fastforward {
+	display: inline;
+}
 
 
 /**********************************************************
