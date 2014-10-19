@@ -5,7 +5,6 @@
 <!--
     This template can be used for simple app with left side menu that can be opened to switch views, for applications like Youtube App or Gmail app.
 -->  
-    
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
     
     <link rel="stylesheet" type="text/css" href="appframework/style.css" />
@@ -14,14 +13,13 @@
     <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
     <!--AppFramework plugin for sliding side menu-->
     <script type="text/javascript" charset="utf-8" src="appframework/plugins/af.slidemenu.js"></script>
-
     <!-- phantom library, needed for XDK "legacy" container api calls -->
     <script src="intelxdk.js"></script>
     <!-- phantom library, needed for Cordova api calls -->
     <script src="cordova.js"></script>
     <!-- phantom library, needed for XDK "legacy" container CORS -->
     <script src="xhr.js"></script>
-    
+
     <script>
         var onDeviceReady=function(){                             // called when Cordova is ready
            if( window.Cordova && navigator.splashscreen ) {     // Cordova API detected
@@ -42,10 +40,95 @@
         });
     </script>
 
-    <script>
+        <script>
     function power_click() {
-        var powerXML = new XMLHTTPRequest();
-        powerXML.open(GET, "http://192.168.1.138:8080/remote/processKey?key=power&hold=keyPress", false);
+        alert("alert");
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=power&hold=keyPress", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
+    function menu_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=menu&hold=keyPress", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
+    function up_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=up&hold=keyPress", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
+    function left_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=left&hold=keyPress", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
+    function select_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=select&hold=keyPress", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
+    function right_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=right&hold=keyPress", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
+    function down_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=down&hold=keyPress", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
+    function rewind_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=rew&hold=keyDown", true);
+        powerXML.send();
+    }
+    </script>
+
+    <script>
+    function play_click() {
+        var play_bool;
+        if(play_bool==true){
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=play&hold=keyPress", true);
+        powerXML.send();
+        play_bool=!play_bool}
+
+        else{
+            var powerXML = new XMLHttpRequest();
+            powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=pause&hold=keyPress", true);
+            powerXML.send();
+            play_bool=!play_bool; 
+        }
+    }
+    </script>
+
+    
+
+    <script>
+    function fastforward_click() {
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=ffw&hold=keyDown", true);
         powerXML.send();
     }
     </script>
