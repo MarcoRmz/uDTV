@@ -4,6 +4,9 @@
     "projectFiles": {},
     "projectDirectories": {},
     "currentService": {
+      "methodapi": "",
+      "endPoint": "Pushmobi",
+      "service": "appmobi"
     }
   }
 }
