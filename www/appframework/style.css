@@ -26,12 +26,14 @@
 
 .icon-power:before {
 	content: "\e61d";
+	color: white;;
 }
 .icon-mail:before {
 	content: "\e600";
 }
 .icon-menu:before {
 	content: "\e601";
+	color: white;;
 }
 .icon-options:before {
 	content: "\e602";
@@ -81,6 +83,7 @@
 .icon-play:before {
 	content: "\e60f";
 	font-size: 70px;
+	color: white;;
 }
 .icon-pause:before {
 	content: "\e610";
@@ -88,21 +91,24 @@
 .icon-select:before {
 	content: "\e61e";
 	font-size: 70px;
+	color: white;;
 }
 .icon-stop:before {
 	content: "\e611";
 }
 .icon-next:before {
 	content: "\e612";
+	color: white;;
 }
 .icon-previous:before {
 	content: "\e613";
+	color: white;;
 }
 .icon-first:before {
 	content: "\e614";
 }
 .icon-last:before {
-	content: "\e615";
+	content: "\e615"
 }
 .icon-sound:before {
 	content: "\e616";
@@ -115,18 +121,22 @@
 .icon-arrow-left:before {
 	content: "\e618";
 	font-size: 80px;
+	color: white;
 }
 .icon-arrow-down:before {
 	content: "\e619";
 	font-size: 80px;
+	color: white;
 }
 .icon-arrow-up:before {
 	content: "\e61a";
 	font-size: 80px;
+	color: white;
 }
 .icon-arrow-right:before {
 	content: "\e61b";
 	font-size: 80px;
+	color: white;
 }
 .icon-chevron:before {
 	content: "\e61c";

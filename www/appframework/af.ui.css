@@ -778,7 +778,7 @@ body {
 
 #afui .panel {
     color:inherit;
-    background:white;
+    background: #005EAD;
 }
  #afui .panel h2 { color:#0088D1;}
 
@@ -1828,7 +1828,7 @@ color:inherit;
 
 #afui.android { /* todo (index)*/
 	font:14px  'Roboto',sans-serif;
- 	background:#fff; 
+ 	background:#005EAD; 
  	color:#fff;
     border-color:#fff;
 }
@@ -2149,7 +2149,7 @@ color:inherit;
 }
 
 #afui.ios7 .panel {
-    background: #fff;    
+    background: #005EAD;    
 }
 #afui.ios7 .panel h2 { color:inherit;}
 
@@ -2530,7 +2530,7 @@ color:inherit;
     line-height:18px;
 }
 #afui.ios .panel {
-    background:#e7e7e7;
+    background:#005EAD;
 }
 
 #afui.ios .panel h2 { color:inherit;}
