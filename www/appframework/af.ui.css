@@ -166,21 +166,8 @@ body {
 } /* This class is applied to the divs that contain the various "views" or pages of the app. */
 
 #afui .panel a{
-	background: transparent;
-	border: 0px;
-	box-shadow: none;
-	color: #343838;
 	padding: 2px;
-	text-decoration: none;
-	position: relative;
-}
-
-#afui .panel button{
-	background: transparent;
-	border: 0px;
-	box-shadow: none;
-	color: #343838;
-	padding: 2px;
+	color: black;
 	text-decoration: none;
 	position: relative;
 }
@@ -189,12 +176,12 @@ body {
 	display: block;
 }
 
-#afui .power button {
+#afui .power a {
 	top: 10px;
 	left: 0px;
 }
 
-#afui .menu button {
+#afui .menu a {
 	top: -55px;
 	left: 50%;
 }
