@@ -1819,7 +1819,7 @@ color:inherit;
 
 #afui.android { /* todo (index)*/
 	font:14px  'Roboto',sans-serif;
- 	background:#000; 
+ 	background:#fff; 
  	color:#fff;
     border-color:#fff;
 }
@@ -1830,9 +1830,9 @@ color:inherit;
 }
 
 #afui.android > #header {
-    background:inherit;
-    color:inherit;
-    border-color:#33B5E5;
+    background: #0347B6; /* Nav Bar color */
+    color:white;
+    border-color:#0347B6;
 }
 
 #afui.android #header .button {
@@ -1948,7 +1948,7 @@ color:inherit;
 #afui.android > #menu {
     border-right:1px solid rgba(128,128,128,0.5);
 	color:inherit;
-	background:inherit;
+	background: #005EAD; /* Sidebar Menu BK color */
 }
 
 #afui.android #menu .list li {
@@ -2169,7 +2169,7 @@ color:inherit;
 }
 
 #afui.ios7 > #menu {
-    border-right:1px solid #bbb;
+    border-right:1px solid #bbb; /* Sidebar menu border color */
     background: #005EAD; /* List Background Color */
     color: white;
 }
