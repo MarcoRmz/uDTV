@@ -137,9 +137,25 @@
 
     <script>
         function music() {
+            var play_bool;
+            if(play_bool==true){
+            var powerXML = new XMLHttpRequest();
+            powerXML.open("POST", "http://192.168.1.138:8080/itv/startURL?url=http://udtv.parseapp.com", true);
+            powerXML.send();
+            play_bool=!play_bool}
+
+            else{
+                var powerXML = new XMLHttpRequest();
+                powerXML.open("POST", "http://192.168.1.138:8080/itv/stopITV", true);
+                powerXML.send();
+                play_bool=!play_bool; 
+            }
+
+            /*
             var audio = new Audio("audio/beep-07.mp3");
             audio.load();
             audio.play();
+            */
         }
     </script>
 
