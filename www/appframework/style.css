@@ -106,9 +106,11 @@
 }
 .icon-sound:before {
 	content: "\e616";
+	font-size: 30px;
 }
 .icon-mute:before {
 	content: "\e617";
+	font-size: 30px;
 }
 .icon-arrow-left:before {
 	content: "\e618";

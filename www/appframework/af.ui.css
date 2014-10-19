@@ -225,6 +225,16 @@ body {
 	left: 70%;
 }
 
+#afui .sound button {
+	top: -20px;
+	left: 70%;
+}
+
+#afui .mute button {
+	top: -80px;
+	left: 87%;
+}
+
 
 /**********************************************************
 	Navbar
@@ -2714,5 +2724,3 @@ color:white;
     color:white;
     text-shadow:0 -1px 0 #000;
 }
-
-
