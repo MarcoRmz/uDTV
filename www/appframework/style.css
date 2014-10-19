@@ -12,6 +12,7 @@
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'icomoon';
 	speak: none;
+	font-size: 60px;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -70,15 +71,18 @@
 }
 .icon-sidebar:before {
 	content: "\e60e";
+	font-size: 35px;
 }
 .icon-play:before {
 	content: "\e60f";
+	font-size: 70px;
 }
 .icon-pause:before {
 	content: "\e610";
 }
 .icon-select:before {
 	content: "\e61e";
+	font-size: 70px;
 }
 .icon-stop:before {
 	content: "\e611";
@@ -103,15 +107,19 @@
 }
 .icon-arrow-left:before {
 	content: "\e618";
+	font-size: 80px;
 }
 .icon-arrow-down:before {
 	content: "\e619";
+	font-size: 80px;
 }
 .icon-arrow-up:before {
 	content: "\e61a";
+	font-size: 80px;
 }
 .icon-arrow-right:before {
 	content: "\e61b";
+	font-size: 80px;
 }
 .icon-chevron:before {
 	content: "\e61c";

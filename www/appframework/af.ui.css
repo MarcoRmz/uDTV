@@ -166,7 +166,6 @@ body {
 } /* This class is applied to the divs that contain the various "views" or pages of the app. */
 
 #afui .panel a{
-	font-size: 40px;
 	padding: 2px;
 	color: black;
 	text-decoration: none;
@@ -179,47 +178,48 @@ body {
 }
 
 #afui .menu a {
-	top: -30px;
+	top: -55px;
 	left: 50%;
 }
 
 #afui .up a {
-	top: -10px;
-	left: 50%;
-}
-
-#afui .left a {
-	top: 20px;
-	left: 35%;
-}
-
-#afui .select a {
-	top: -20px;
-	left: 50%;
-}
-
-#afui .right a {
-	top: -60px;
-	left: 65%;
-}
-
-#afui .down a {
 	top: -30px;
 	left: 50%;
 }
 
-#afui .rewind a {
+#afui .left a {
+	top: -30px;
 	left: 30%;
 }
 
+#afui .select a {
+	top: -100px;
+	left: 50%;
+}
+
+#afui .right a {
+	top: -180px;
+	left: 70%;
+}
+
+#afui .down a {
+	top: -180px;
+	left: 50%;
+}
+
+#afui .rewind a {
+	top: -170px;
+	left: 20%;
+}
+
 #afui .play a {
-	top: -40px;
+	top: -240px;
 	left: 50%;
 }
 
 #afui .fastforward a {
-	top: -80px;
-	left: 70%;
+	top: -300px;
+	left: 80%;
 }
 
 
