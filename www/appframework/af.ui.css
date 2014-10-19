@@ -1824,8 +1824,8 @@ color:inherit;
 }
 
 #afui.android.light {
-	background:#FDFDFD;
-	color:#000;
+	background:#0347B6;
+	color:#fff;
 }
 
 #afui.android > #header {
@@ -1982,8 +1982,8 @@ color:inherit;
 }
 
 #afui.android.light .button {
-    background:#eee;
-    border-color:#D1D1D1;
+    background: transparent;
+    border-color: none;
 }
 
 #afui.android .button.pressed,
@@ -2497,6 +2497,8 @@ color:inherit;
 }
 
 #afui.ios > #header { 
+    background-color: #0347B6;
+    /*
     background-color:#889BB3;
     background-image:-ms-linear-gradient(top, #B3BECD 0%, #889BB3 50%, #6E84A2 51%);
     background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #B3BECD), color-stop(.5, #889BB3), color-stop(.51, #6E84A2));
@@ -2504,6 +2506,7 @@ color:inherit;
     background-image:linear-gradient(to bottom, #B3BECD 0%, #889BB3 50%, #6E84A2 51%);
     border: 1px solid;
     border-color:#CCD2DA transparent #2D3033 transparent;
+    */
     color:white;
 } 
 
@@ -2523,11 +2526,14 @@ color:inherit;
 #afui.ios .panel h2 { color:inherit;}
 
 #afui.ios > #navbar {
+    background-color: #0347B6;
+    /*
     background-color:#000;
     background-image:-ms-linear-gradient(top, #222 0%, #111 50%, #000 51%);
     background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.5, #111), color-stop(.51, #000));
     background-image:-webkit-linear-gradient(top, #222 0%, #111 50%, #000 51%);
     background-image:linear-gradient(to bottom, #222 0%, #111 50%, #000 51%);
+    */
     box-shadow:0 1px 0 #555 inset;
    
     border-top:1px solid #000;
@@ -2544,7 +2550,7 @@ color:inherit;
 
 #afui.ios > #menu.tabletMenu {
    border-right:none;
-    background:#000;
+    background:#005EAD;
     color:#fff;
 }
 
