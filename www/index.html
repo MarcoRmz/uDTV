@@ -143,6 +143,14 @@
         }
     </script>
 
+    <script>
+    function texto(){
+        var powerXML = new XMLHttpRequest();
+        powerXML.open("POST","http://192.168.1.138:8080", true);
+        powerXML.send("text here");
+    }
+    </script>
+
 </head>
 <body> 
 <div id="afui">
@@ -210,43 +218,35 @@
             <button onclick="music()" class"musica">probar este pedo</button>
         </div>
         
-        <!-- 3era pantalla -->
+        <!-- 3era pantalla 
         <div tag="panel" title="Queue" id="page3" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Queue</h1>
             </header>
-            <p>Queue page</p>
-        </div>
+            <button onclick="texto" class="Prueba_Texto">Click me son</button>
+        </div> -->
         
-        <!-- 4ta pantalla -->
+        <!-- 4ta pantalla 
         <div tag="panel" title="Cast" id="page4" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Cast</h1>
             </header>
-            <p>Cast page/p>
-        </div>
+            <p>Cast page</p>
+        </div> -->
 
-        <!-- 5ta pantalla -->
+        <!-- 5ta pantalla 
         <div class="panel" title="Facts" id="page5" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Facts</h1>
             </header>
             <p>Facts page</p>
-        </div>
+        </div> -->
         
     </div>
 </div>
-<script>
-    $(".musica").toggle(function(){
-        document.getElementsByTagName('prueba').play();},
-        {
-        document.getElementsByTagName('prueba').pause();
-        }
-    });
-</script>
 
 </body>
 </html>    
