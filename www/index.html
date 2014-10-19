@@ -43,9 +43,11 @@
     </script>
 
     <script>
+    function power_click() {
         var powerXML = new XMLHTTPRequest();
-        power.open(GET, "http://192.168.1.138:8080/remote/processKey?key=power&hold=keyPress", true);
-        power.send();
+        powerXML.open(GET, "http://192.168.1.138:8080/remote/processKey?key=power&hold=keyPress", false);
+        powerXML.send();
+    }
     </script>
 
 </head>
@@ -72,7 +74,7 @@
                 <h1>Remote</h1>
             </header>
             <div class="power">
-                <a onclick='powerXML()' class="icon-power"></a>
+                <button onclick="power_click()" class="icon-power"></button>
             </div>
             <div class="menu">
                 <a href="http://192.168.1.138:8080/remote/processKey?key=menu&hold=keyPress" class="icon-menu"></a>
@@ -145,7 +147,7 @@
         
     </div>
 </div>
-<script type="text/javascript">
+<script>
     $(".musica").toggle(function(){
         document.getElementsByTagName('prueba').play();},
         {
