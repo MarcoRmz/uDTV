@@ -166,6 +166,22 @@
         }
     </script>
 
+    <script>
+        function video_play() {
+            var powerXML = new XMLHttpRequest();
+            powerXML.open("GET", "http://192.168.1.138:8080/itv/startURL?url=http://udtv.parseapp.com/video.html", true);
+            powerXML.send();
+        }
+    </script>
+
+    <script>
+        function video_stop() {
+            var powerXML = new XMLHttpRequest();
+            powerXML.open("GET", "http://192.168.1.138:8080/itv/stopITV", true);
+            powerXML.send();
+        }
+    </script>
+
 </head>
 <body> 
 <div id="afui">
@@ -175,8 +191,8 @@
         <ul class="list">
             <li><a href="#page1" style="text-align: center;"><span class="icon-remote"></span><p style="text-align: center;">Remote</p></a></li>
             <li><a href="#page2" style="text-align: center;"><span class="icon-music"></span><p style="text-align: center;">Music</p></a></li>
-            <li><a href="#page3" style="text-align: center;"><span class="icon-queue"></span><p style="text-align: center;">Queue</p></a></li>
-            <li><a href="#page4" style="text-align: center;"><span class="icon-cast"></span><p style="text-align: center;">Cast</p></a></li>
+            <li><a href="#page3" style="text-align: center;"><span class="icon-cast"></span><p style="text-align: center;">Cast</p></a></li>
+            <li><a href="#page4" style="text-align: center;"><span class="icon-queue"></span><p style="text-align: center;">Queue</p></a></li>
             <li><a href="#page5" style="text-align: center;"><span class="icon-channel-info"></span><p style="text-align: center;">Facts</p></a></li>
         </ul>
     </nav>
@@ -225,42 +241,44 @@
         
 
         <!-- 2nda pantalla -->
-        <div class="panel" title="Music" id="page2" data-footer="none">
+        <div class="panel" title="Music" id="page2" data-footer="none" style="background: #005EAD;">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Music</h1>
             </header>
-            <div style="font-size: 24px; text-align: center; color: white; background: #00B4CC; height: 60px; width: 100% border-radius: 5px;">Haven't Met You Yet</div>
-            <div class="sound">
-                <button onclick="music_play()" class="icon-sound"></button>
-            </div>
-            <div class="mute">
-                <button onclick="music_stop()" class="icon-mute"></button>
+            <div style="height: 60px; border: 2px #fff">
+                <div style="font-size: 20px; text-align: left; color: white;">Haven't Met You Yet</div>
+                <div class="sound">
+                    <button onclick="music_play()" class="icon-sound"></button>
+                </div>
+                <div class="mute">
+                    <button onclick="music_stop()" class="icon-mute"></button>
+                </div>
             </div>
         </div>
         
         <!-- 3era pantalla -->
-        <div class="panel" title="Queue" id="page3" data-footer="none">
+        <div class="panel" title="Cast" id="page3" data-footer="none">
+            <header>
+                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
+                <h1>Cast</h1>
+            </header>
+            <p style="color: black; font-size: 20px;">Funny Vid</p>
+            <div class="sound">
+                <button onclick="video_play()" class="icon-sound"></button>
+            </div>
+            <div class="mute">
+                <button onclick="video_stop()" class="icon-mute"></button>
+            </div>
+        </div>
+
+        <!-- 4ta pantalla -->
+        <div class="panel" title="Queue" id="page4" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Queue</h1>
             </header>
             
-        </div>
-        
-        <!-- 4ta pantalla -->
-        <div class="panel" title="Cast" id="page4" data-footer="none">
-            <header>
-                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Cast</h1>
-            </header>
-            <p style="color: black; font-size: 20px;">Haven't Met You Yet</p>
-            <div class="sound">
-                <button onclick="music_play()" class="icon-sound"></button>
-            </div>
-            <div class="mute">
-                <button onclick="music_stop()" class="icon-mute"></button>
-            </div>
         </div>
 
         <!-- 5ta pantalla -->
