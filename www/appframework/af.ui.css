@@ -165,63 +165,66 @@ body {
 	padding-top:0px;
 } /* This class is applied to the divs that contain the various "views" or pages of the app. */
 
-#afui .panel a{
+#afui .panel button{
 	padding: 2px;
 	color: black;
 	text-decoration: none;
 	position: relative;
+	background: transparent;
+	box-shadow: none;
+	border: 0px;
 }
 
 #afui .panel header h1{
 	display: block;
 }
 
-#afui .power a {
+#afui .power button {
 	top: 10px;
 	left: 0px;
 }
 
-#afui .menu a {
+#afui .menu button {
 	top: -55px;
 	left: 50%;
 }
 
-#afui .up a {
+#afui .up button {
 	top: -30px;
 	left: 50%;
 }
 
-#afui .left a {
+#afui .left button {
 	top: -30px;
 	left: 30%;
 }
 
-#afui .select a {
+#afui .select button {
 	top: -100px;
 	left: 51%;
 }
 
-#afui .right a {
+#afui .right button {
 	top: -180px;
 	left: 70%;
 }
 
-#afui .down a {
+#afui .down button {
 	top: -180px;
 	left: 50%;
 }
 
-#afui .rewind a {
+#afui .rewind button {
 	top: -170px;
 	left: 20%;
 }
 
-#afui .play a {
+#afui .play button {
 	top: -240px;
 	left: 50%;
 }
 
-#afui .fastforward a {
+#afui .fastforward button {
 	top: -300px;
 	left: 80%;
 }
