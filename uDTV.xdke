@@ -4,9 +4,6 @@
     "projectFiles": {},
     "projectDirectories": {},
     "currentService": {
-      "methodapi": "lookupTrack",
-      "endPoint": "Lookup",
-      "service": "spotify"
     }
   }
 }
