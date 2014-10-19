@@ -127,14 +127,25 @@
     }
     </script>
 
-    
-
     <script>
     function fastforward_click() {
         var powerXML = new XMLHttpRequest();
         powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=ffw&hold=keyDown", true);
         powerXML.send();
     }
+    </script>
+
+    <script>
+        function music() {
+            var powerXML = new XMLHttpRequest();
+            powerXML.open("GET", "audio/beep-07.mp3", true);
+            powerXML.send();
+            /*
+            var audio = new Audio("audio/beep-07.mp3");
+            audio.load();
+            audio.play();
+            */
+        }
     </script>
 
 </head>
@@ -201,8 +212,7 @@
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Music</h1>
             </header>
-            <button class"musica">probar este pedo</button>
-            <audio tag="prueba"> <src="audio/beep-07.mp3"></audio>
+            <button onclick="music()" class"musica">probar este pedo</button>
         </div>
         
         <!-- 3era pantalla -->
