@@ -168,10 +168,12 @@ body {
 
 #afui .play a {
 	padding: 2px;
-	color: #fff;
-	margin-left: auto;
-	margin-right: auto;
+	color: black;
+	position: absolute;
+	right: 50%;
 }
+
+#afui .
 
 
 /**********************************************************
