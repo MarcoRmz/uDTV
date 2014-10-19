@@ -15,6 +15,8 @@
     <!--AppFramework plugin for sliding side menu-->
     <script type="text/javascript" charset="utf-8" src="appframework/plugins/af.slidemenu.js"></script>
 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" ></script>
+
     <!-- phantom library, needed for XDK "legacy" container api calls -->
     <script src="intelxdk.js"></script>
     <!-- phantom library, needed for Cordova api calls -->
@@ -106,7 +108,7 @@
                 <h1>Music</h1>
             </header>
             <button class"musica">probar este pedo</button>
-            <audio tag="prueba"> <src="audio/beep-07.mp3"></audio>
+            <audio tag="prueba" autoplay loop> <src="audio/beep-07.mp3"></audio>
         </div>
         
         <!-- 3era pantalla -->
@@ -139,11 +141,9 @@
     </div>
 </div>
 <script type="text/javascript">
-    $(".musica").toggle(function(){
-        document.getElementsByTagName('prueba').play();},
-        {
-        document.getElementsByTagName('prueba').pause();
-        }
+
+    $(".musica").onclick(function(){
+        document.getElementsByTagName('prueba').play();
     });
 </script>
 
