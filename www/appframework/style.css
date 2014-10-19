@@ -38,15 +38,19 @@
 }
 .icon-music:before {
 	content: "\e603";
+	font-size: 50px;
 }
 .icon-channel-info:before {
 	content: "\e604";
+	font-size: 50px;
 }
 .icon-remote:before {
 	content: "\e605";
+	font-size: 50px;
 }
 .icon-cast:before {
 	content: "\e606";
+	font-size: 50px;
 }
 .icon-checkmark:before {
 	content: "\e607";
@@ -65,6 +69,7 @@
 }
 .icon-queue:before {
 	content: "\e60c";
+	font-size: 50px;
 }
 .icon-add-to-queue:before {
 	content: "\e60d";

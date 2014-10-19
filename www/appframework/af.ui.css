@@ -172,6 +172,10 @@ body {
 	position: relative;
 }
 
+#afui .panel header h1{
+	display: block;
+}
+
 #afui .power a {
 	top: 10px;
 	left: 0px;
@@ -194,7 +198,7 @@ body {
 
 #afui .select a {
 	top: -100px;
-	left: 50%;
+	left: 51%;
 }
 
 #afui .right a {
@@ -259,7 +263,6 @@ body {
 	position: relative;
 	margin: 0;
 }
-
 
 #afui #navbar .af-badge {
 	right:auto;

@@ -37,7 +37,7 @@
         $.ui.animateHeaders = false;
                 
         $(document).ready(function(){
-            $.ui.setSideMenuWidth('200px');
+            $.ui.setSideMenuWidth('140px');
             $.ui.launch();
         });
     </script>
@@ -48,10 +48,11 @@
     <!--Left Side Menu Navigation bar -->
     <nav>
         <ul class="list">
-            <li><a href="#page1"><span class="icon-remote"></span> Remote</a></li>
-            <li><a href="#page2"><span class="icon-music"></span> Music</a></li>
-            <li><a href="#page3"><span class="icon-queue"></span> Queue</a></li>
-            <li><a href="#page4"><span class="icon-channel-info"></span> Facts</a></li>
+            <li><a href="#page1" style="text-align: center;"><span class="icon-remote"></span><p style="text-align: center;">Remote</p></a></li>
+            <li><a href="#page2" style="text-align: center;"><span class="icon-music"></span><p style="text-align: center;">Music</p></a></li>
+            <li><a href="#page3" style="text-align: center;"><span class="icon-queue"></span><p style="text-align: center;">Queue</p></a></li>
+            <li><a href="#page4" style="text-align: center;"><span class="icon-cast"></span><p style="text-align: center;">Cast</p></a></li>
+            <li><a href="#page5" style="text-align: center;"><span class="icon-channel-info"></span><p style="text-align: center;">Facts</p></a></li>
         </ul>
     </nav>
     
@@ -60,7 +61,7 @@
     <!--Main View Pages-->
         <div class="panel" title="Remote" id="page1" data-footer="none" selected="true">
             <header>
-                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='icon-sidebar' style="float:left !important"></a>
+                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Remote</h1>
             </header>
             <div class="power">
@@ -101,7 +102,7 @@
         <!-- 2nda pantalla -->
         <div class="panel" title="Music" id="page2" data-footer="none">
             <header>
-                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='icon-sidebar' style="float:left !important"></a>
+                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Music</h1>
             </header>
             <p>This is view for second menu item</p>
@@ -110,7 +111,7 @@
         <!-- 3era pantalla -->
         <div class="panel" title="Queue" id="page3" data-footer="none">
             <header>
-                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='icon-sidebar' style="float:left !important"></a>
+                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Queue</h1>
             </header>
             <p>This is view for third menu item</p>
@@ -119,7 +120,7 @@
         <!-- cuarta pantalla -->
         <div class="panel" title="Facts" id="page4" data-footer="none">
             <header>
-                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='icon-sidebar' style="float:left !important"></a>
+                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Facts</h1>
             </header>
             <p>This is view for fourth menu item</p>
