@@ -14,7 +14,6 @@
     <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
     <!--AppFramework plugin for sliding side menu-->
     <script type="text/javascript" charset="utf-8" src="appframework/plugins/af.slidemenu.js"></script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- phantom library, needed for XDK "legacy" container api calls -->
     <script src="intelxdk.js"></script>
@@ -45,17 +44,8 @@
 
     <script>
     function power_click() {
-        alert("alert");
-        var powerXML = new XMLHttpRequest();
-        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=power&hold=keyPress", true);
-        powerXML.send();
-    }
-    </script>
-
-    <script>
-    function play_click() {
-        var powerXML = new XMLHttpRequest();
-        powerXML.open("GET", "http://192.168.1.138:8080/remote/processKey?key=play&hold=keyPress", true);
+        var powerXML = new XMLHTTPRequest();
+        powerXML.open(GET, "http://192.168.1.138:8080/remote/processKey?key=power&hold=keyPress", false);
         powerXML.send();
     }
     </script>
