@@ -106,10 +106,11 @@
                 <h1>Music</h1>
             </header>
             <button class"musica">probar este pedo</button>
+            <audio tag="prueba"> <src="-audio-" preload="auto"></audio>
         </div>
         
         <!-- 3era pantalla -->
-        <div class="panel" title="Queue" id="page3" data-footer="none">
+        <div tag="panel" title="Queue" id="page3" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Queue</h1>
@@ -130,6 +131,12 @@
 </div>
 <script type="text/javascript">
     
+    $(".musica").toggle(function(){
+        document.getElementsByTagName('prueba').play();},
+        {
+        document.getElementsByTagName('prueba').pause();
+        }
+    });
 </script>
 
 </body>
